@@ -11,10 +11,17 @@
         <div class="image"><img src="images/icon-success.svg"></div>
         <div class="text">
             <h1>Thanks for subscribing!</h1>
-            <p>A confirmation has been sent to <span class="email-user"></span>. Please open it and click the button inside to confirm your subscripiton</p>
+            <p>A confirmation has been sent to <span class="displayEmail"></span>. Please open it and click the button inside to confirm your subscripiton</p>
             <button class="btn">Dismiss message</button>
         </div>
     </main>
-    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pega o o email salvo no item userEmail no arquivo JS e o exibe 
+            const savedEmail = localStorage.getItem('userEmail');
+            const displayEmailElement = document.querySelector('.displayEmail');
+            displayEmailElement.textContent = savedEmail;
+        });
+      </script>
 </body>
 </html>
