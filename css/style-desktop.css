@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+*, body, html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    height: 100vh;
+    font-family: 'Roboto-Regular', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F4359;
+}
+
+.conteiner {
+    width: 70vw;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text image";
+    border-radius: 30px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.conteiner-text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3F4359;
+}
+
+.text {
+    width: 90%;
+}
+
+.text h1 {
+    white-space: nowrap;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 3.5em;
+  
+}
+
+.text p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.list {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 0.8em;
+}
+
+.list li::before {
+    content: url(../images/icon-list.svg) '\00A0\00A0\00A0\00A0';
+}
+
+.email-input {
+    margin-top: 2.5em;
+}
+
+.email-input label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 0.8em;
+}
+
+.email-input #invalid {
+    color: #D96C6C;
+}
+
+.email-input.invalid input[type="email"] {
+    color: #D96C6C;
+    background-color: #FEE9E8;
+    border: 1px solid #BE7F7A;
+    
+}
+
+.email-input input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 1em;
+    outline: none;
+}
+
+.email-input input:focus {
+    border: 2px solid #3F4359;
+}
+
+.btn {
+    margin-top: 1em;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3F4359;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #F25774, #F28749, #F26241);
+    cursor: pointer;
+}
+
+.container-image {
+    grid-area: image;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    
+}
+
+img { 
+    width: 90%;
+}
+
+
+
+@media (max-width: 1130px) {
+    .conteiner {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        transition: 0.5s;
+    }
+}
+
+
+
+
+
+
+
+

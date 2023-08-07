@@ -1,0 +1,94 @@
+/* Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%) */
+
+:root {
+    --cor: #ff6257;
+    --cor2: hsl(235, 18%, 26%);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    background-color: #242742;
+    
+}
+
+.container {
+    max-width: 478px;
+    min-height: 514px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+    color: #242742;
+}
+
+.text, .image {
+    width: 70%;
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 3em;
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+.text p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+}
+
+.text span {
+    font-weight: 600;
+}
+
+.text .btn {
+    width: 100%;
+    padding: 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: #242742;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1em;
+}
+
+.text .btn:hover {
+    background-image: linear-gradient(to right, #F25774, #F28749, #F26241);
+    cursor: pointer;
+
+}
+
+.image {
+    height: 20%;
+}
+
