@@ -16,7 +16,7 @@
         </div>
     </main>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('load', () => {
             // Pega o o email salvo no item userEmail no arquivo JS e o exibe 
             const savedEmail = localStorage.getItem('userEmail');
             const displayEmailElement = document.querySelector('.displayEmail');
