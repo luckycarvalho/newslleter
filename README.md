@@ -22,7 +22,7 @@ Users should be able to:
 ![](images/prints/newslleter-success.jpg)
 
 ### Links
-- Live Site URL: [](https://luckycarvalho.github.io/newslleter/)
+- Live Site URL: [https://luckycarvalho.github.io/newslleter/](https://luckycarvalho.github.io/newslleter/)
 
 ### Built with
 
