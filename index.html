@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-desktop.css" media="screen and (min-width:790px)">
+    <link rel="stylesheet" href="css/style-desktop.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <title>Subscribe</title>
 </head>
 <body>
@@ -28,7 +29,10 @@
         </section>
         <section class="container-image">
             <div class="image">
-                <img src="images/illustration-sign-up-desktop.svg">
+                <picture>
+                    <source media="(max-width: 790px)" srcset="images/illustration-sign-up-mobile.svg">
+                    <img src="images/illustration-sign-up-desktop.svg">
+                </picture>
             </div>
         </section>
     </main>
